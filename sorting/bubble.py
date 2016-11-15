@@ -32,4 +32,4 @@ for i in xrange(length - 1):
         if elements[j] > elements[j + 1]:
             elements[j + 1], elements[j] = elements[j], elements[j + 1]
         print "elements : ", elements
-print elements
+print "sorted elements : ", elements
