@@ -1,8 +1,8 @@
 """
     http://bigocheatsheet.com/
 
-    worst case performance: O(n^2)
     best case performance: O(n)
+    worst case performance: O(n^2)
     average case performance: O(n^2)
 
     Case 1)
@@ -17,6 +17,18 @@
         look n - 1 elements (since the biggest integer is at the end) and so on
         and so forth till 1 comparison occurs.
         Big Oh = n + n - 1 + n - 2 ... + 1 = (n*(n + 1))/2 = O(n^2)
+
+    Space Complexity: O(1) Auxiliary
+        Stable: Yes
+
+    Psuedo code: http://en.wikipedia.org/wiki/Bubble_sort
+
+    1. Each two adjacent elements are compared
+    2. Swap with  lighter elements
+    3. Move forward and swap with each lighter item
+    4. If there is a heavier element, then this item begins to bubble to the
+    surface
+    5. Finally the Heaviest Element is on its place
 """
 
 elements = raw_input("enter comma separated elements : ")
